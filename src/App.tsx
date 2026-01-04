@@ -16,11 +16,12 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter basename={import.meta.env.BASE_URL}>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+
       </TooltipProvider>
     </ThemeProvider>
   </QueryClientProvider>

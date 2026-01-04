@@ -47,7 +47,7 @@ const projects = [
     title: 'Project Creator',
     description: 'Just a front-end project created with React and Redux. Here you can log in, create a project, view a particular project, delete a particular project and log out.',
     tags: ['React.js', 'Redux'],
-    image: "../../images/project_creator.png",
+    image: "public/images/project_creator.png",
     github: 'https://github.com/Kalyan-Halder/projectWithRedux',
     live: 'https://610bff4724167eeb8c2c4602--happy-kirch-e3cbc5.netlify.app/',
   },
