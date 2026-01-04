@@ -3,9 +3,9 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/portfolio/' : '/', // ← This line is CRITICAL
+  // REMOVE OR COMMENT OUT the base line:
+  // base: '/portfolio/',  // ← Remove this line
   server: {
     host: "::",
     port: 8080,
