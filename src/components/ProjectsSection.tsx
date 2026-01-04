@@ -44,12 +44,12 @@ const projects = [
   },
   {
     id: 5,
-    title: 'Project Name Coming Soon',
-    description: 'A brief description of the project will be displayed here, highlighting the problem and solution.',
-    tags: ['Vue.js', 'Express', 'MongoDB'],
-    image: null,
-    github: '#',
-    live: '#',
+    title: 'Project Creator',
+    description: 'Just a front-end project created with React and Redux. Here you can log in, create a project, view a particular project, delete a particular project and log out.',
+    tags: ['React.js', 'Redux'],
+    image: "../../images/project_creator.png",
+    github: 'https://github.com/Kalyan-Halder/projectWithRedux',
+    live: 'https://610bff4724167eeb8c2c4602--happy-kirch-e3cbc5.netlify.app/',
   },
 ];
 
@@ -98,7 +98,7 @@ export function ProjectsSection() {
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Below are placeholder sections. I will update them with real project details, 
+            Below are the real project details, 
             including descriptions, tech stacks, and live/GitHub links.
           </p>
         </div>
@@ -138,13 +138,27 @@ export function ProjectsSection() {
                   <div
                     className="group bg-card rounded-xl overflow-hidden border border-border hover:border-primary/50 shadow-soft hover:shadow-lifted transition-all duration-300 hover:-translate-y-2 h-full"
                   >
-                    {/* Project Image Placeholder */}
-                    <div className="aspect-video bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center relative overflow-hidden">
+                    {/* Project Image - Simple Conditional */}
+                    <div className="aspect-video relative overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10">
+                      {/* If project has an image, show it */}
+                      {project.image ? (
+                        <img 
+                          src={project.image} 
+                          alt={project.title}
+                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                        />
+                      ) : (
+                        // If no image, show placeholder
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <Code2 className="h-12 w-12 text-primary/50 group-hover:scale-110 transition-transform duration-300" />
+                        </div>
+                      )}
+                      
+                      {/* Gradient Overlay */}
                       <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                      <Code2 className="h-12 w-12 text-primary/50 group-hover:scale-110 transition-transform duration-300" />
                     </div>
 
-                    {/* Project Content */}
+                    {/* Project Content (unchanged) */}
                     <div className="p-6">
                       <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
                         {project.title}

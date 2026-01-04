@@ -152,7 +152,7 @@ export function ContactSection() {
                 </Button>
 
                 <p className="text-xs text-muted-foreground text-center">
-                  * This is a static placeholder. Form submission logic can be added later.
+                  * This is a static form . Place contact me via Email or Linkedin.
                 </p>
               </div>
             </form>

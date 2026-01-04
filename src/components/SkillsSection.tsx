@@ -26,9 +26,18 @@ const skills = [
   { name: 'Flutter', category: 'Mobile' },
   { name: 'Docker', category: 'DevOps' },
   { name: 'Git', category: 'DevOps' },
+  { name: 'Postman', category: 'Tools' },
+  { name: 'Python', category: 'Frontend' },
+  { name: 'ML', category: 'ML' },
+  { name: 'AI', category: 'AI' },
 ];
 
 const services = [
+  {
+    icon: Plug,
+    title: 'AI Researcher',
+    description: 'Researching On various AI models',
+  },
   {
     icon: Globe,
     title: 'Website Design & Development',
@@ -54,6 +63,7 @@ const services = [
     title: 'Clean, Maintainable Code',
     description: 'Well-structured code that scales and evolves',
   },
+  
 ];
 
 const getCategoryIcon = (category: string) => {

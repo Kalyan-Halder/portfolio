@@ -20,7 +20,7 @@ export function AboutSection() {
               <div className="absolute -inset-4 gradient-bg rounded-2xl opacity-10 blur-xl" />
               <div className="relative w-72 h-80 sm:w-80 sm:h-96 rounded-2xl overflow-hidden shadow-lifted">
                 <img 
-                  src="https://i.postimg.cc/k4B9SMzd/self2.jpg" 
+                  src="https://i.postimg.cc/Z5bt4JrX/20251127-133020-(2).jpg" 
                   alt="Kalyan Kanti Halder"
                   className="w-full h-full object-cover"
                 />

@@ -7,9 +7,17 @@ const education = [
     id: 1,
     institution: 'Patuakhali Science and Technology University',
     degree: 'Bachelor of Science in Computer Science & Engineering',
-    year: 'Graduated [Year]',
+    year: 'Graduated [2025]',
     location: 'Patuakhali, Bangladesh',
-    note: 'Additional details to be added.',
+    note: '',
+  },
+  {
+    id: 2,
+    institution: 'Notre Dame Collage Dhaka',
+    degree: 'Higher Secondary School Certificate',
+    year: 'Graduated [2019]',
+    location: 'Dhaka, Bangladesh',
+    note: '',
   },
 ];
 
@@ -25,7 +33,7 @@ export function EducationSection() {
             <span className="gradient-text">Background</span>
           </h2>
           <p className="text-muted-foreground">
-            This section will be populated with formal education and certifications.
+            This section will shows the  formal education and certifications.
           </p>
         </div>
 

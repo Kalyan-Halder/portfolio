@@ -49,7 +49,7 @@ export function HeroSection() {
                 isVisible && 'animate-fade-up animation-delay-200'
               )}
             >
-              Full-Stack Developer
+              Major in CSE, Full-Stack Developer, AI Engineer, Creative Technologist, ML Researcher 
             </p>
             <p
               className={cn(
@@ -99,7 +99,7 @@ export function HeroSection() {
               )}
             >
               <a
-                href="https://github.com/kalyan"
+                href="https://github.com/Kalyan-Halder/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
@@ -108,7 +108,7 @@ export function HeroSection() {
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com/in/kalyan"
+                href="https://www.linkedin.com/in/kalyan-kanti-halder/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
