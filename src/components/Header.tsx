@@ -1,14 +1,19 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Sun, Moon } from 'lucide-react';
+import { Menu, X, Sun, Moon, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTheme } from '@/hooks/useTheme';
 import { cn } from '@/lib/utils';
+
+// If this import path fails, use a relative path instead (see note below)
+import cvPdfUrl from '@/assets/kalyan_cv.pdf';
 
 const navLinks = [
   { href: '#home', label: 'Home' },
   { href: '#about', label: 'About' },
   { href: '#skills', label: 'Skills' },
+  { href: '#research', label: 'Research' },
   { href: '#projects', label: 'Projects' },
+  { href: '#education', label: 'Education' },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -18,9 +23,7 @@ export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -28,9 +31,7 @@ export function Header() {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    if (element) element.scrollIntoView({ behavior: 'smooth' });
     setIsMobileMenuOpen(false);
   };
 
@@ -38,9 +39,7 @@ export function Header() {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        isScrolled
-          ? 'bg-background/80 backdrop-blur-lg shadow-soft py-3'
-          : 'bg-transparent py-5'
+        isScrolled ? 'bg-background/80 backdrop-blur-lg shadow-soft py-3' : 'bg-transparent py-5'
       )}
     >
       <div className="container flex items-center justify-between">
@@ -67,8 +66,17 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Theme Toggle & Mobile Menu */}
+        {/* Right side: Download CV + Theme Toggle + Mobile Menu */}
         <div className="flex items-center gap-2">
+          {/* Download CV (desktop) */}
+          <Button asChild className="hidden md:inline-flex gap-2">
+            <a href={cvPdfUrl} download="kalyan_cv.pdf" aria-label="Download CV">
+              <Download className="h-4 w-4" />
+              Download CV
+            </a>
+          </Button>
+
+          {/* Theme Toggle */}
           <Button
             variant="ghost"
             size="icon"
@@ -76,13 +84,10 @@ export function Header() {
             className="rounded-full"
             aria-label="Toggle theme"
           >
-            {theme === 'light' ? (
-              <Moon className="h-5 w-5" />
-            ) : (
-              <Sun className="h-5 w-5" />
-            )}
+            {theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
           </Button>
 
+          {/* Mobile Menu Toggle */}
           <Button
             variant="ghost"
             size="icon"
@@ -90,11 +95,7 @@ export function Header() {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? (
-              <X className="h-5 w-5" />
-            ) : (
-              <Menu className="h-5 w-5" />
-            )}
+            {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
         </div>
       </div>
@@ -103,7 +104,7 @@ export function Header() {
       <div
         className={cn(
           'md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-lg border-b border-border transition-all duration-300 overflow-hidden',
-          isMobileMenuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
+          isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         )}
       >
         <nav className="container py-4 flex flex-col gap-3">
@@ -117,6 +118,19 @@ export function Header() {
               {link.label}
             </a>
           ))}
+
+          {/* ✅ Download CV (mobile) */}
+          <Button asChild className="mt-2 w-full gap-2">
+            <a
+              href={cvPdfUrl}
+              download="kalyan_cv.pdf"
+              onClick={() => setIsMobileMenuOpen(false)}
+              aria-label="Download CV"
+            >
+              <Download className="h-4 w-4" />
+              Download CV
+            </a>
+          </Button>
         </nav>
       </div>
     </header>
