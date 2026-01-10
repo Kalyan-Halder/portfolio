@@ -70,9 +70,9 @@ export function Header() {
         <div className="flex items-center gap-2">
           {/* Download CV (desktop) */}
           <Button asChild className="hidden md:inline-flex gap-2">
-            <a href={cvPdfUrl} download="kalyan_cv.pdf" aria-label="Download CV">
+            <a href={cvPdfUrl} download="kalyan_cv.pdf" aria-label="CV">
               <Download className="h-4 w-4" />
-              Download CV
+              CV
             </a>
           </Button>
 
@@ -104,7 +104,7 @@ export function Header() {
       <div
         className={cn(
           'md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-lg border-b border-border transition-all duration-300 overflow-hidden',
-          isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          isMobileMenuOpen ? 'max-h-106 opacity-100' : 'max-h-0 opacity-0'
         )}
       >
         <nav className="container py-4 flex flex-col gap-3">
