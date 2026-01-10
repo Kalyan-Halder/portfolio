@@ -8,12 +8,12 @@ import { useCallback, useEffect, useState } from 'react';
 const projects = [
   {
     id: 1,
-    title: 'Project Name Coming Soon',
-    description: 'A brief description of the project will be displayed here, highlighting the problem and solution.',
-    tags: ['React', 'Node.js', 'MongoDB'],
-    image: null,
-    github: '#',
-    live: '#',
+    title: 'Shutter Sphere',
+    description: 'A global community for photographers, artists, and visual storytellers to share their perspectives, connect with like-minded individuals, and inspire creativity worldwide.',
+    tags: ['Nextjs', 'Node.js', 'express.js', 'MongoDB'],
+    image: "public/images/shutter_sphere.png",
+    github: 'https://github.com/Kalyan-Halder/gallery_app',
+    live: 'https://gallery-front-end.onrender.com/',
   },
   {
     id: 2,
