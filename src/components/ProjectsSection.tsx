@@ -7,6 +7,8 @@ import { useCallback, useEffect, useState } from 'react';
 
 import shutterSphereImage from '@/assets/images/shutter_sphere.png';
 import projectCreatorImage from '@/assets/images/project_creator.png';
+import brandImage from '@/assets/images/brand.png';
+
 
 const projects = [
   {
@@ -20,21 +22,21 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Project Name Coming Soon',
-    description: 'A brief description of the project will be displayed here, highlighting the problem and solution.',
-    tags: ['Next.js', 'TypeScript', 'Tailwind'],
-    image: null,
-    github: '#',
-    live: '#',
+    title: 'Project Creator',
+    description: 'Just a front-end project created with React and Redux. Here you can log in, create a project, view a particular project, delete a particular project and log out.',
+    tags: ['React.js', 'Redux'],
+    image: projectCreatorImage,
+    github: 'https://github.com/Kalyan-Halder/projectWithRedux',
+    live: 'https://610bff4724167eeb8c2c4602--happy-kirch-e3cbc5.netlify.app/',
   },
   {
     id: 3,
     title: 'Project Name Coming Soon',
-    description: 'A brief description of the project will be displayed here, highlighting the problem and solution.',
-    tags: ['Flutter', 'Firebase', 'REST API'],
-    image: null,
-    github: '#',
-    live: '#',
+    description: 'A Frontend Website Template for different screensizes',
+    tags: ['HTML', 'CSS', 'JS'],
+    image: brandImage,
+    github: 'https://github.com/Kalyan-Halder/Architech_Web_template',
+    live: 'https://kalyan-halder.github.io/Architech_Web_template/',
   },
   {
     id: 4,
@@ -47,12 +49,12 @@ const projects = [
   },
   {
     id: 5,
-    title: 'Project Creator',
-    description: 'Just a front-end project created with React and Redux. Here you can log in, create a project, view a particular project, delete a particular project and log out.',
-    tags: ['React.js', 'Redux'],
-    image: projectCreatorImage,
-    github: 'https://github.com/Kalyan-Halder/projectWithRedux',
-    live: 'https://610bff4724167eeb8c2c4602--happy-kirch-e3cbc5.netlify.app/',
+    title: 'Project Name Coming Soon',
+    description: 'A brief description of the project will be displayed here, highlighting the problem and solution.',
+    tags: ['React Native', 'Node.js', 'PostgreSQL'],
+    image: null,
+    github: '#',
+    live: '#',
   },
 ];
 
@@ -146,10 +148,11 @@ export function ProjectsSection() {
                       {/* If project has an image, show it */}
                       {project.image ? (
                         <img 
-                          src={project.image} 
-                          alt={project.title}
-                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
-                        />
+                            src={project.image} 
+                            alt={project.title}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            style={{ objectPosition: 'center top' }} // Adjust focus area
+                          />
                       ) : (
                         // If no image, show placeholder
                         <div className="absolute inset-0 flex items-center justify-center">
