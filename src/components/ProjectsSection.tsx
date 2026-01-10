@@ -5,13 +5,16 @@ import { cn } from '@/lib/utils';
 import useEmblaCarousel from 'embla-carousel-react';
 import { useCallback, useEffect, useState } from 'react';
 
+import shutterSphereImage from '@/assets/images/shutter_sphere.png';
+import projectCreatorImage from '@/assets/images/project_creator.png';
+
 const projects = [
   {
     id: 1,
     title: 'Shutter Sphere',
     description: 'A global community for photographers, artists, and visual storytellers to share their perspectives, connect with like-minded individuals, and inspire creativity worldwide.',
     tags: ['Nextjs', 'Node.js', 'express.js', 'MongoDB'],
-    image: "/images/shutter_sphere.png",
+    image: shutterSphereImage,
     github: 'https://github.com/Kalyan-Halder/gallery_app',
     live: 'https://gallery-front-end.onrender.com/',
   },
@@ -47,7 +50,7 @@ const projects = [
     title: 'Project Creator',
     description: 'Just a front-end project created with React and Redux. Here you can log in, create a project, view a particular project, delete a particular project and log out.',
     tags: ['React.js', 'Redux'],
-    image: "/images/project_creator.png",
+    image: projectCreatorImage,
     github: 'https://github.com/Kalyan-Halder/projectWithRedux',
     live: 'https://610bff4724167eeb8c2c4602--happy-kirch-e3cbc5.netlify.app/',
   },
