@@ -72,7 +72,7 @@ export function ContactSection() {
             <h4 className="text-lg font-medium mb-4">Find Me On</h4>
             <div className="flex gap-4">
               <a
-                href="https://github.com/kalyan"
+                href="https://github.com/Kalyan-Halder"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 px-5 py-3 rounded-xl bg-card border border-border hover:border-primary/50 hover:shadow-card transition-all duration-300 group"
@@ -81,7 +81,7 @@ export function ContactSection() {
                 <span className="font-medium group-hover:text-primary transition-colors">GitHub</span>
               </a>
               <a
-                href="https://linkedin.com/in/kalyan"
+                href="https://www.linkedin.com/in/kalyan-kanti-halder/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 px-5 py-3 rounded-xl bg-card border border-border hover:border-primary/50 hover:shadow-card transition-all duration-300 group"
