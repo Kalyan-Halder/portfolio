@@ -8,6 +8,7 @@ import { useCallback, useEffect, useState } from 'react';
 import shutterSphereImage from '@/assets/images/shutter_sphere.png';
 import projectCreatorImage from '@/assets/images/project_creator.png';
 import brandImage from '@/assets/images/brand.png';
+import rbac from '@/assets/images/rbac.png'
 
 
 const projects = [
@@ -32,20 +33,20 @@ const projects = [
   {
     id: 3,
     title: 'Project Name Coming Soon',
+    description: 'A role based access corntrol system. Here the users can resister to the site only via admin invite. Admin sends invite using email. The email contains the url with token. Upon clicking the email the user can resister and login. The admin holds the ultimate control (Update role, update project status etc.) ',
+    tags: ['Next.Js', 'Node.js', 'MongoDB', 'TypeScript'],
+    image: rbac,
+    github: 'https://github.com/Kalyan-Halder/role_based_access_control_fullstack',
+    live: 'https://role-based-access-control-front-end.onrender.com/projects',
+  },
+  {
+    id: 4,
+    title: 'Project Name Coming Soon',
     description: 'A Frontend Website Template for different screensizes',
     tags: ['HTML', 'CSS', 'JS'],
     image: brandImage,
     github: 'https://github.com/Kalyan-Halder/Architech_Web_template',
     live: 'https://kalyan-halder.github.io/Architech_Web_template/',
-  },
-  {
-    id: 4,
-    title: 'Project Name Coming Soon',
-    description: 'A brief description of the project will be displayed here, highlighting the problem and solution.',
-    tags: ['React Native', 'Node.js', 'PostgreSQL'],
-    image: null,
-    github: '#',
-    live: '#',
   },
   {
     id: 5,
