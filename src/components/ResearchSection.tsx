@@ -19,13 +19,13 @@ const research = [
     id: 3,
     institution: '3D Self-Supervised Pre-Training and 3D-to-2D Transfer Learning for Brain Tumor MRI Classification',
     degree: '5th International Conference on Electrical, Computer, & Telecommunication Engineering (IEEE ICECTE 2026)',
-    note: 'Accepted' ,
+    note: 'Accepted & Presented' ,
   },
   {
     id: 3,
     institution: 'Architectural Insights for Neural Network-Based RIS Optimization: A Systematic Study of Deep Learning Models for Phase Shift Configuration Under Imperfect Channel Conditions',
     degree: '5th International Conference on Electrical, Computer, & Telecommunication Engineering (IEEE ICECTE 2026)',
-    note: 'Accepted' ,
+    note: 'Accepted & Presented' ,
   },
 ];
 
@@ -41,7 +41,7 @@ export function ResearchSection() {
             <span className="gradient-text">Research and Publication</span>
           </h2>
           <p className="text-muted-foreground">
-            Here I show my formal Researchs and Publications.
+            Here are the formal Researchs and Publications.
           </p>
         </div>
 

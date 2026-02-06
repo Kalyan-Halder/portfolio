@@ -5,7 +5,7 @@ import { useTheme } from '@/hooks/useTheme';
 import { cn } from '@/lib/utils';
 
 // If this import path fails, use a relative path instead (see note below)
-import cvPdfUrl from '@/assets/kalyan_cv.pdf';
+import cvPdfUrl from '@/assets/Kalyan_Kanti_Halder.pdf';
 
 const navLinks = [
   { href: '#home', label: 'Home' },
@@ -70,7 +70,7 @@ export function Header() {
         <div className="flex items-center gap-2">
           {/* Download CV (desktop) */}
           <Button asChild className="hidden md:inline-flex gap-2">
-            <a href={cvPdfUrl} download="kalyan_cv.pdf" aria-label="CV">
+            <a href={cvPdfUrl} download="Kalyan_Kanti_Halder.pdf" aria-label="CV">
               <Download className="h-4 w-4" />
               CV
             </a>
@@ -123,7 +123,7 @@ export function Header() {
           <Button asChild className="mt-2 w-full gap-2">
             <a
               href={cvPdfUrl}
-              download="kalyan_cv.pdf"
+              download="Kalyan_Kanti_Halder.pdf"
               onClick={() => setIsMobileMenuOpen(false)}
               aria-label="Download CV"
             >

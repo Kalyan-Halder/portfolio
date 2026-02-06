@@ -19,6 +19,14 @@ const education = [
     location: 'Dhaka, Bangladesh',
     note: '',
   },
+  {
+    id: 3,
+    institution: 'Udayan Secondary School, Barishal',
+    degree: 'Secondary School Certificate',
+    year: 'Graduated [2017]',
+    location: 'Barishal, Bangladesh',
+    note: '',
+  },
 ];
 
 export function EducationSection() {

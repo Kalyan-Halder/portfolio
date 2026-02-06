@@ -23,6 +23,8 @@ const skills = [
   { name: 'Node.js', category: 'Backend' },
   { name: 'REST APIs', category: 'Backend' },
   { name: 'MongoDB', category: 'Database' },
+  { name: 'MySQL', category: 'Database' },
+  { name: 'PostgreSQL', category: 'Database' },
   { name: 'Flutter', category: 'Mobile' },
   { name: 'Docker', category: 'DevOps' },
   { name: 'Git', category: 'DevOps' },

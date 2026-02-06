@@ -9,6 +9,8 @@ import shutterSphereImage from '@/assets/images/shutter_sphere.png';
 import projectCreatorImage from '@/assets/images/project_creator.png';
 import brandImage from '@/assets/images/brand.png';
 import rbac from '@/assets/images/rbac.png'
+import expense from '@/assets/images/expense_tracker.png'
+import agro from '@/assets/images/Agro.png'
 
 
 const projects = [
@@ -23,6 +25,24 @@ const projects = [
   },
   {
     id: 2,
+    title: 'Expense Tracker',
+    description: 'This is a full-stack Expense Tracker application built with React + FastAPI + PostgreSQL. Users can add, edit, and delete expenses, set monthly budgets, and visualize spending through interactive charts. The application features a clean dashboard with real-time budget calculations and three types of data visualizations showing expense distribution, daily trends, and monthly patterns.',
+    tags: ['Next.js', 'Recharts', 'FastAPI', 'PostgreSQL'],
+    image: expense,
+    github: 'https://github.com/Kalyan-Halder/chart_fastapi',
+    live: 'https://chart-fastapi-9ybk.onrender.com/',
+  },
+  {
+    id: 3,
+    title: 'Role Based Access Control (RBAC) with email invitation',
+    description: 'A role based access control system. Here the users can resister to the site only via admin invite. Admin sends invite using email. The email contains the url with token. Upon clicking the email the user can resister and login. The admin holds the ultimate control (Update role, update project status etc.) ',
+    tags: ['Next.Js', 'Node.js', 'MongoDB', 'TypeScript'],
+    image: rbac,
+    github: 'https://github.com/Kalyan-Halder/role_based_access_control_fullstack',
+    live: 'https://role-based-access-control-front-end.onrender.com/projects',
+  },
+  {
+    id: 4,
     title: 'Project Creator',
     description: 'Just a front-end project created with React and Redux. Here you can log in, create a project, view a particular project, delete a particular project and log out.',
     tags: ['React.js', 'Redux'],
@@ -31,31 +51,21 @@ const projects = [
     live: 'https://610bff4724167eeb8c2c4602--happy-kirch-e3cbc5.netlify.app/',
   },
   {
-    id: 3,
-    title: 'Project Name Coming Soon',
-    description: 'A role based access corntrol system. Here the users can resister to the site only via admin invite. Admin sends invite using email. The email contains the url with token. Upon clicking the email the user can resister and login. The admin holds the ultimate control (Update role, update project status etc.) ',
-    tags: ['Next.Js', 'Node.js', 'MongoDB', 'TypeScript'],
-    image: rbac,
-    github: 'https://github.com/Kalyan-Halder/role_based_access_control_fullstack',
-    live: 'https://role-based-access-control-front-end.onrender.com/projects',
+    id: 5,
+    title: 'Agro Market Manager',
+    description: 'This project is based on Agricultural Farm Market System. Our goal is to make Android Application of Agricultural Farm Market System using Flutter and Dart programming language along with NodeJS, MongoDB for backend and database.',
+    tags: ['Flutter', 'Dart', 'Node.js',"Express", 'MongoDB'],
+    image: agro,
+    github: 'https://github.com/Kalyan-Halder/agro',
   },
   {
-    id: 4,
-    title: 'Project Name Coming Soon',
+    id: 6,
+    title: 'Frontend',
     description: 'A Frontend Website Template for different screensizes',
     tags: ['HTML', 'CSS', 'JS'],
     image: brandImage,
     github: 'https://github.com/Kalyan-Halder/Architech_Web_template',
     live: 'https://kalyan-halder.github.io/Architech_Web_template/',
-  },
-  {
-    id: 5,
-    title: 'Project Name Coming Soon',
-    description: 'A brief description of the project will be displayed here, highlighting the problem and solution.',
-    tags: ['React Native', 'Node.js', 'PostgreSQL'],
-    image: null,
-    github: '#',
-    live: '#',
   },
 ];
 
